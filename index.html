@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Advance???</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./receta_1.html">Recete 1</a>
+        <a href="./receta_2.html">Receta 2</a>
+    </nav>
+    <h1>Tablas</h1>
+    <img src="https://scontent.fmex3-2.fna.fbcdn.net/v/t39.30808-6/312711190_1168149354110586_5784826598700688764_n.jpg?stp=cp0_dst-jpg_e15_fr_q65&_nc_cat=107&ccb=1-7&_nc_sid=da1649&_nc_ohc=rQOLd7MpU_cAX8Ammxy&_nc_ht=scontent.fmex3-2.fna&oh=00_AfAnYku_GO1BPrG1GJ-LZsFl4fMcd_lfBXBo0QRcwyd7ig&oe=6463223A"
+        height="300px">
+    <p>Esas no, las de HTML</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Lastname</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Axel</td>
+                <td>Olea</td>
+            </tr>
+            <tr>
+                <td>Fumino</td>
+                <td>Furuhashi</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>78</td>
+            </tr>
+        </tfoot>
+        <caption>Persons</caption>
+    </table>
+
+    <br>
+    <br>
+
+    <table>
+        <p>Encabezado simmple</p>
+        <thead><!--Agrupa los elementos de la cabecera en la tabla-->
+            <tr>
+                <!--Colspan permite expandir las celdas a las columnas de datos-->
+                <th colspan="2">Encabezado de Tablas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>El cuerpo de tabla</td>
+                <td>con 2 columnas</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--Separacion de codigo-->
+
+    <p>Table with colgroup</p>
+    <table>
+        <colgroup span="4"></colgroup>
+        <!--Para aplicar una propiedad a más de una columna no es necesario repetir la propiedad en cada elemento <col>. Lo más sencillo es aplicarle el atributo span al primer elemento <col>. Este atributo funciona igual que rowspan y colspan, es decir, nos permite expandir la influencia de <col> al número de columnas que queramos.-->
+        <tr>
+            <th>Countries</th>
+            <th>Capitals</th>
+            <th>Population</th>
+            <th>Language</th>
+        </tr>
+        <tr>
+            <td>USA</td>
+            <td>Washington, D.C.</td>
+            <td>309 million</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>Sweden</td>
+            <td>Stockholm</td>
+            <td>9 million</td>
+            <td>Swedish</td>
+        </tr>
+    </table>
+
+    <p>Table with colgroup and col</p>
+    <table>
+        <colgroup>
+            <!--El elemento <col> se especifica dentro de un bloque <colgroup>, justo debajo de la apertura <table>.-->
+            <col span="2" style="background-color: rgb(218, 120, 243)" />
+            <!--Este elemento nos permite especificar propiedades de estilo para toda una columna. Sin este elemento tendríamos que especificar el estilo en cada celda <th> o <td> de la columna que queramos estilizar. -->
+            <col />
+        </colgroup>
+        <tr>
+            <th>Lima</th>
+            <th>Limon</th>
+            <th>Naranja</th>
+        </tr>
+        <tr>
+            <td>Green</td>
+            <td>Yellow</td>
+            <td>Orange</td>
+        </tr>
+    </table>
+
+    <p>Cuadro sencillo con leyenda(caption)</p>
+    <table>
+        <caption>
+            Subtítulo impresionante
+        </caption>
+        <tr>
+            <td>Dato Impresionante</td>
+        </tr>
+    </table>
+    <hr>
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+        <p id="nombre-anclaje">Nombre del párrafo</p>
+    </div>
+    <br>
+    <h1>Vinculos de Anclaje</h1>
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+        <a id="nombre-anclaje"> Aquí el nombre de la sección a la que quieres brincar </a>
+    </div><br>
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+        <h4 id="nombre-anclaje">Nombre de la sección</h4>
+    </div> <br>
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+        <a href="./index2.html">
+            <img id="image-G" src="https://www.anmosugoi.com/wp-content/uploads/2019/07/fumino.jpg" alt="Fumino1" title="Fumino 1" height="300"/>
+        </a>
+        <img id="image-G" src="https://somoskudasai.com/wp-content/uploads/2021/10/image-146.png" alt="Fumino2" title="Fumino Furuhashi" height="300" />
+    </div>
+    <br>
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+        <a href="#nombre-anclaje">Brincar a la parte de la página con “nombre-anclaje” id </a>
+    </div>
+</body>
+
+</html>
